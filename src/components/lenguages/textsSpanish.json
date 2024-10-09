@@ -1,0 +1,23 @@
+{
+    "start":{},
+    "variables": {
+        "title": "Variables",
+        "subtitles":{
+          "variablesCompare": "Comparación de Variables",  
+          "type": "Tipos de variables"
+        },
+        "description": "Una variable en Java es un contenedor o espacio en memoria que se utiliza para almacenar datos que pueden cambiar a lo largo de la ejecución de un programa. Las variables permiten al programador guardar, manipular y acceder a la información. Cada variable tiene un tipo de dato, un nombre y un valor.",
+        "types":{
+            "int": "Almacena números enteros, es decir, sin decimales. En Java, su tamaño es de 4 bytes y puede almacenar valores desde -2,147,483,648 hasta 2,147,483,647.",
+            "float": "Almacena números con decimales (también llamados números de punto flotante). En Java, un float ocupa 4 bytes y tiene una precisión de 7 dígitos decimales.",
+            "double": "Similar a float, pero con mayor precisión. Un double en Java ocupa 8 bytes y tiene una precisión de 15 dígitos decimales.",
+            "String": "Almacena secuencias de caracteres. Es un tipo de dato especial en Java, ya que las cadenas se tratan como objetos.",
+            "char": "Almacena un solo carácter, como una letra, número o símbolo. En Java, un char ocupa 2 bytes y se escribe entre comillas simples (').",
+            "boolean": "Almacena valores true o false (verdadero o falso). Es útil para representar estados lógicos."
+        }
+    },
+    "symbols":{},
+    "if":{},
+    "forEach":{},
+    "doWhile":{}
+} 

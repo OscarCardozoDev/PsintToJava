@@ -1,0 +1,41 @@
+@mixin scroll{
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+@mixin centerFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin subtitles {
+    margin-top: 2rem;
+    //margin-left: 5rem;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+
+    ::before {
+        content: '*';
+        font-size: large;
+        margin-right: 5px;
+    }
+}
+
+//-------------------------------------------- Fuentes --------------------------------------------//
+
+@font-face {
+    font-family: 'rubikItalic'; /* Nombre de la fuente */
+    src: url('../../public/font/rubik/Rubik-Italic-VariableFont_wght.ttf') format('truetype'); /* Ruta a la fuente en tu carpeta */
+    font-weight: italic; /* Peso de la fuente (normal) */
+    font-style: normal; /* Estilo de la fuente (normal) */
+}
+  
+@font-face {
+    font-family: 'rubik'; /* Nombre de la fuente */
+    src: url('../../public/font/rubik/Rubik-VariableFont_wght.ttf') format('truetype'); /* Ruta a la fuente en tu carpeta */
+    font-weight: normal; /* Peso de la fuente (normal) */
+    font-style: normal; /* Estilo de la fuente (normal) */
+}
