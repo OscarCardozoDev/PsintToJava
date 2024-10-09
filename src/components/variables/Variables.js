@@ -2,6 +2,7 @@ import React from 'react';
 import './../../scss/variables.scss'
 import language from '../lenguages/textsSpanish.json'
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Typography } from '@mui/material';
+import CodeEditor from '../aditionals/testArea';
 
 function Variables() {
   // Datos de comparación entre Psint y Java
@@ -59,6 +60,7 @@ function Variables() {
                         <br></br>
                         <li><strong>{key}:</strong></li>
                         {value}
+                        <CodeEditor></CodeEditor>
                     </Typography>
                 ))}
                 </ul>
