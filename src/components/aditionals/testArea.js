@@ -1,23 +1,27 @@
 import React, { useState } from 'react';
 import CodeMirror from '@uiw/react-codemirror';
-import { java } from '@codemirror/lang-java'; // Importa el lenguaje Java
-import { materialLight } from '@uiw/codemirror-theme-material'; // Puedes usar cualquier tema disponible
+import { java } from '@codemirror/lang-java'; 
+import { materialLight } from '@uiw/codemirror-theme-material'; 
 
-const MyCodeEditor = () => {
+const CodeEditor = () => {
   const [code, setCode] = useState('// Escribe tu código en Java aquí');
 
   
   return (
-    <CodeMirror
-      value={code}
-      height="200px"
-      theme={materialLight}
-      extensions={[java()]} // Usa la extensión de Java
-      onChange={(value) => {
-        setCode(value);
-      }}
-    />
+    <div style={{ display: 'flex', justifyContent: 'center' }}> {/* Contenedor centrado */}
+      <CodeMirror
+        value={code}
+        height="auto"
+        width="75%"
+        justify-content="center"
+        theme={materialLight}
+        extensions={[java()]}
+        onChange={(value) => {
+          setCode(value);
+        }}
+      />
+    </div>
   );
 };
 
-export default MyCodeEditor;
+export default CodeEditor;
