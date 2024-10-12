@@ -1,8 +1,8 @@
 import React from 'react';
-import './../../scss/variables.scss'
+import './variables.scss'
 import language from '../lenguages/textsSpanish.json'
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Typography } from '@mui/material';
-import CodeEditor from '../aditionals/testArea';
+import { ReadPlayground } from '../aditionals/playground/playground';
 
 function Variables() {
   // Datos de comparación entre Psint y Java
@@ -50,24 +50,34 @@ function Variables() {
                     </Table>
                 </TableContainer>
             </section>
-            <section className="typeSec">
-                <Typography className='subtitle tiposSub'>
-                    {language.variables.subtitles.type}
-                </Typography>
-                <ul className="typeLs">
-                {Object.entries(language.variables.types).map(([key, value]) => (
-                    <Typography key={key} className='variable-type'>
-                        <br></br>
-                        <li><strong>{key}:</strong></li>
-                        {value}
-                        <CodeEditor></CodeEditor>
-                    </Typography>
-                ))}
-                </ul>
-            </section>
+            <Types></Types>
         </div>
     </div>
   );
+}
+
+function Types(){
+
+    return(
+        <section className="typeSec">
+        <Typography className='subtitle tiposSub'>
+            {language.variables.subtitles.type}
+        </Typography>
+        <ul className="typeLs">
+        {Object.entries(language.variables.types).map(([key, value]) => (
+            <li className='variable-type'>
+                <strong>{key}:</strong> 
+                <br />
+                {value}
+                <div className='examples'>
+                    <ReadPlayground type={"PseInt"} code={language.variables.examples.psint[key]} />
+                    <ReadPlayground type={"Java"} code={language.variables.examples.java[key]} />
+                </div>
+            </li>
+        ))}
+        </ul>
+    </section>
+    );
 }
 
 export default Variables;

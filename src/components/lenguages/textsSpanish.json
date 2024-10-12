@@ -14,6 +14,24 @@
             "String": "Almacena secuencias de caracteres. Es un tipo de dato especial en Java, ya que las cadenas se tratan como objetos.",
             "char": "Almacena un solo carácter, como una letra, número o símbolo. En Java, un char ocupa 2 bytes y se escribe entre comillas simples (').",
             "boolean": "Almacena valores true o false (verdadero o falso). Es útil para representar estados lógicos."
+        },
+        "examples":{
+            "psint":{
+                "int": "Definir entero Como Entero\nentero <- 10",
+                "float": "Definir flotante Como Real\nflotante <- 5.75",
+                "double": "Definir doble Como Real\ndoble <- 3.14159",
+                "String": "Definir cadena Como Caracter\ncadena <- \"Hola Mundo\"",
+                "char": "Definir caracter Como Caracter\ncaracter <- 'A'",
+                "boolean": "Definir booleano Como Logico\nbooleano <- Verdadero"
+            },
+            "java":{
+                "int": "int entero = 10;",
+                "float": "float flotante = 5.75f;",
+                "double": "double doble = 3.14159;",
+                "String": "String cadena = \"Hola Mundo\";",
+                "char": "char caracter = 'A';",
+                "boolean": "boolean booleano = true;"
+            }
         }
     },
     "symbols":{},

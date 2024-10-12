@@ -1,0 +1,42 @@
+@import './../../scss/mixins.scss'; 
+
+.variablesMain{
+    padding: 0.5rem 20%;
+
+    .title{
+        margin: 3rem 0;
+        font-size: 500%;
+    }
+
+    .subtitle{
+        @include subtitles;
+    }
+}
+
+.main{
+    @include centerFlex;
+    align-items: normal;
+
+
+    .description{
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+
+
+    .editorCode{
+        width: 100%;
+        margin: 25px;
+        display: flex;
+        justify-content: center;
+
+        code{
+            width: 30px;
+        }
+
+        span{
+            width: 50%;
+        }
+    }
+}
