@@ -1,0 +1,39 @@
+@import './../../scss/mixins.scss'; 
+
+.crearPagina{
+    height: calc(100vh - 50px);
+    box-sizing: border-box;
+    padding: 40px;
+    padding-top: 0;
+    width: 100vw;
+    display: flex;
+
+    .panelAgregar{
+        height: 100%;
+        width: 15%;
+
+        ul{
+            padding: 0;
+            list-style: none;
+
+            button{
+                width: 75%;
+                justify-content: start;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    .agregarContenido{
+        height: 100%;
+        width: 85%;
+
+        .agregarPanel{
+            @include centerFlex();
+            background-color: grey;
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+        }
+    }
+}

@@ -1,13 +1,16 @@
 import './scss/main.scss';
 import TemporaryDrawer from './components/aditionals/drawer';
 import Variables from './components/variables/Variables';
+import CrearPagina from './components/hacerPagina/hacerPagina';
 
 function App() {
   return (
     <div className="App">
-      <TemporaryDrawer></TemporaryDrawer>
+      <header>
+        <TemporaryDrawer></TemporaryDrawer>
+      </header>
       <main>
-        <Variables></Variables>
+        <CrearPagina></CrearPagina>
       </main>
     </div>
   );

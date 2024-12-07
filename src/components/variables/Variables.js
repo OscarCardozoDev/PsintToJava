@@ -23,7 +23,7 @@ function Variables() {
                     {language.variables.description}
                 </Typography>
             </section>
-            <section className="tableSec">
+                <section className="tableSec">
                 <Typography className='subtitle tableSub'>
                     {language.variables.subtitles.variablesCompare}
                 </Typography>
